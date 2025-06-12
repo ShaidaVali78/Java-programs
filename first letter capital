@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+      String s="iam shaida vali";
+      String st[]=s.split(" ");
+      StringBuilder r=new StringBuilder();
+      for(int i=0; i<st.length;i++){
+        String re=st[i];
+        int n=re.length();
+        //System.out.println(n);
+        String m=re.substring(0,1).toUpperCase()+re.substring(1);
+       r.append(m).append(" ");
+      }
+      System.out.println(r);
+    }
+}
