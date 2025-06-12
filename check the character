@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+      char c='7';
+      String s="aeiou";
+      if(s.indexOf(String.valueOf(c))!=-1){
+        System.out.println("ovel");
+      }else if(Character.isLetter(c)){
+        System.out.println("consonent");
+      }else if(Character.isDigit(c)){
+        System.out.println("digit");
+      }else {
+        System.out.println("special character");
+      }
+  }
+}
