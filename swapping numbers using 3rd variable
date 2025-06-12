@@ -1,0 +1,13 @@
+class Main {
+    public static void main(String[] args) {
+        int a=11;
+        int b=120;
+        int t=0;
+        System.out.println("before swapping"+a+" "+b);
+        a=b;
+        b=t;
+        t=a;
+        System.out.println("after swapping"+a+" "+b);
+
+    }
+}
