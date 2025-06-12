@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the first value");
+      int n1=sc.nextInt();
+      System.out.println("enter the second value");
+      int n2=sc.nextInt();
+      System.out.println("enter the operator");
+      char operator=sc.next().charAt(0);
+      int result=0;
+      switch(operator) {
+        case'+':
+          result=n1+n2;
+          System.out.println(result);
+          break;
+        case'-':
+          result=n1-n2;
+          System.out.println(result);
+          break;
+        case'*':
+          result=n1*n2;
+          System.out.println(result);
+          break;
+        case'/':
+          if(n2!=0) {
+             result=n1/n2;
+          System.out.println(result);
+          }else {
+            System.out.println("cant divisible by zero");
+          }
+         
+          break;
+        case'%':
+          result=n1%n2;
+          System.out.println(result);
+          break;
+        default:
+        System.out.println("invalid operator");
+        break;
+      }
+  }
+}
