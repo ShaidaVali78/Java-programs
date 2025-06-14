@@ -1,0 +1,18 @@
+class Main {
+    public static void main(String[] args) {
+        int[] r={2,3,4,5,7,10};
+        int e=0;
+        int o=0;
+        for(int i=0; i<r.length; i++) {
+            int n=r[i];
+            if(n%2==0) {
+                e++;
+            }else {
+                o++;
+            }
+        }
+        System.out.println("even numbers are"+e);
+        System.out.println("odd numbers are"+o);
+
+    }
+}
