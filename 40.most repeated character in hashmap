@@ -1,0 +1,23 @@
+import java.util.HashMap;
+import java.util.Map;
+class Main {
+    public static void main(String[] args) {
+        char[] arr={'b','b','a','c','a','b','b','c',};
+        HashMap<Character,Integer>map=new HashMap<>();
+        for(int i=0; i<arr.length; i++) {
+            map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+        }
+        int l=Integer.MIN_VALUE;
+        char k=Character.MIN_VALUE;
+        for(Map.Entry<Character,Integer>entry:map.entrySet()) {
+            char key=entry.getKey();
+            int value=entry.getValue();
+            if(value>l) {
+                l=value;
+                k=key;
+            }
+        }
+        
+        System.out.println(k);
+    }
+}
